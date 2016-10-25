@@ -1,11 +1,40 @@
-
-
 Final Project: Getting Caged
 
-Description: Nicolas Cage Movie rate and search site. Users can search and find their favorite Nicolas Cage movies. Hooks people to streaming if available.
+Description: Nicolas Cage Movie rate and search site. Users can search and find their favorite Nicolas Cage movies. When people want to get Caged in a specific genre or specific plot you can search for it with this application.
 
-Features:
-API for each Nicolas Cage movies by name, moviePoster, description, genre, legal streaming link, amazonLink.
+
+<!-- Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality -->
+
+
+Functional component 1
+Search Function
+
+Functional component 2
+Restricting how many divs with Pages
+
+
+Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
+
+Additional Libraries
+
+Bootstrap for Responsive Design
+Handlebars to compile data easily.
+
+JSON Data Keys
+
+Use this section to list specific JSON Data Key mappings.
+I'll place how I got each part of the Div here.
+
+jQuery Functional Requirements
+
+<!-- Search Function goes here. -->
+
+Change Log
+
+10/25/16: Repo created
+
+Issues and Resolutions:
+
 
 Step by Step process:
 
@@ -39,6 +68,11 @@ Hamminess, Over the Top, and Overall Rating.
 Step Seven (Optional):
 
 Search Engine to search by rating
+
+
+
+
+
 
 
 
