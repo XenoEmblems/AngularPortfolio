@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" ng-app="root">
+<!-- Angular is like a giant drawer -->
+<!-- The main HTML is the foundation of the drawer -->
+<!-- The HTML accesses an individual drawer which is the template.html -->
+<!-- What is inside the drawer is defined by the components. The contents is the .json or the array of data.-->
+<!-- When an new view is clicked it generates a cabinet with new data defined by a new component -->
 <head>
 
     <meta charset="utf-8">
@@ -11,19 +15,74 @@
 
     <title>Eric Doyle</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/cagematch.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/portfolio.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
+<!-- Navbar of views -->
+<!-- Use Angular to use click events to display different views with relevant content. Everything should use Bootstrap block format for responsiveness. -->
+<!-- This where the view is generated -->
+<div ng-view></div>
+
+<!-- Home/About Me View -->
+<!-- Profile Picture - Elevator Pitch to sell myself -->
+<!-- Be friendly and personal. -->
+<!-- No longer than 300 words -->
+<!-- <aboutme></aboutme> -->
+
+<!-- Resume View -->
+<!-- Display a list of major ventures I worked in on left.
+New Web Design, Rescuing Leftover Cuisine, Seedless Lawyers
+
+Skills showcased on the right
+-->
+<!-- <resume></resume> -->
+<!--  Portfolio View
+
+Display a list of projects and what I've learned for each project I have done.
+Ask Claudia on how I should present this. Showcase Website and GettingCaged project.
+
+Start with 3x2 display to share with Getting Caged
+
+Modal with picture and link on the left.
+
+Github Info, Functionality, Tech Stack on right
+<portfolio></portfolio>
+ -->
+ <!-- Contact View 
+
+Hire me
+Phone Number,
+Skype,
+LinkedIn link,
+Email link
+
+
+ -->
+
+
 <h1>Under Construction</h1>
+<div ng-controller="index">{{message}}</div>
 
 
 </body>
+<!-- Make sure EVERY SINGLE JS file is connected or Angular will not work. -->
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 
+
+<!-- Angular JavaScript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<!-- Angular Module -->
+<script src="app/app.module.js"></script>
+<!-- Project List Module -->
+<script src="app/project-list/project-list.module.js"></script>
+<!-- Project List Component -->
+<script src="app/project-list/project-list.component.js"></script>
+
 
 </html>

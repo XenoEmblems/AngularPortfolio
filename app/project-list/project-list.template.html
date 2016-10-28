@@ -1,0 +1,38 @@
+<!-- This template is the entire Project List View -->
+<!-- Example -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+	<p>
+      Search: <input ng-model="$ctrl.query" />
+      <!-- Typing in here defines what is being filtered in "phones" -->
+	</p>
+    </div>
+    <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+        <!-- This ng-model organizes the array based on .orderProp using the orderBy filter -->
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+      </p>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="phones">
+	  	<li ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+	    	<a href="#/phones/{{phone.id}}" class="thumb">
+	      		<img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
+	      		<!-- How to set up images -->
+	    	</a>
+	    	<a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+	    <p>{{phone.snippet}}</p>
+	  	</li>
+	 </ul>
+       <!-- Adding new features in ng-repeat is seperated by | -->
+        <!-- The list adds and removes names or numbers in the phone array based if they match the input $ctrl.query -->
+
+    </div>
+  </div>
+</div>
